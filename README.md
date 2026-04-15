@@ -12,7 +12,7 @@ Designed for use with the [PersonaRL](https://github.com/persona-ai-inc/persona_
 
 2. **Clone your fork** alongside `persona_rl`:
    ```bash
-   cd ~/AJ   # or wherever your workspace lives
+   cd ~   # or wherever your workspace lives
    git clone git@github.com:YOUR_USERNAME/claude-state.git
    ```
 
