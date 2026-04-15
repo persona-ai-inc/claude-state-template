@@ -18,7 +18,7 @@ Designed for use with the [PersonaRL](https://github.com/persona-ai-inc/persona_
 
 3. **Set `CLAUDE_STATE_PATH`** in `persona_rl/docker/.env`:
    ```
-   CLAUDE_STATE_PATH=/home/<your-username>/AJ/claude-state
+   CLAUDE_STATE_PATH=/home/<your-username>/claude-state
    ```
 
 4. **Start the container** with the Claude overlay:
@@ -212,14 +212,14 @@ Memory is auto-saved when Claude learns something worth keeping. It's indexed in
 Memory files and settings are written directly to the bind mount, so changes appear on the host immediately. Commit and push to sync to other machines:
 
 ```bash
-cd ~/AJ/claude-state
+cd ~/claude-state
 git add -A && git commit -m "update memories" && git push
 ```
 
 On another machine, pull before starting a session:
 
 ```bash
-cd ~/AJ/claude-state && git pull
+cd ~/claude-state && git pull
 ```
 
 ---
