@@ -1,0 +1,20 @@
+# Credentials & auth (machine-specific)
+home/.credentials.json
+home/remote-settings.json
+home/policy-limits.json
+home/mcp-needs-auth-cache.json
+
+# Ephemeral / machine-specific dirs
+home/sessions/
+home/session-env/
+home/file-history/
+home/shell-snapshots/
+home/backups/
+home/ide/
+home/plugins/
+home/plans/
+
+# Per-project: ignore everything except memory/ dirs
+home/projects/*/*
+!home/projects/*/memory/
+!home/projects/*/memory/**
